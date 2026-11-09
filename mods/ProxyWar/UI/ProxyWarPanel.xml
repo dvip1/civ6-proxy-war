@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context ColorSet="Beige_Black" FontStyle="Shadow">
+
+	<Box Color="0,0,0,150" Size="parent,parent" ConsumeMouse="1">
+		<Grid ID="WindowContainer" Size="auto,auto" Anchor="C,C" Style="DropShadow2" Color="255,255,255,200" AutoSizePadding="25,25" ConsumeMouse="1">
+			<Grid ID="Window" Size="640,auto" Anchor="C,C" Style="WindowFrameTitle" AutoSizePadding="0,13">
+				<Stack ID="WindowStack" StackGrowth="Down" Padding="10" Anchor="C,T">
+					<Container Size="400,42" Anchor="C,T">
+						<Label ID="TitleLabel" Style="WindowHeader" Anchor="C,C" String="{LOC_PROXYWAR_TITLE:upper}" />
+					</Container>
+
+					<!-- Tabs -->
+					<Stack Anchor="C,T" StackGrowth="Right" Padding="6">
+						<GridButton ID="TabProxyButton"   Size="200,32" Style="TabButton" String="LOC_PROXYWAR_TAB_PROXY" />
+						<GridButton ID="TabHistoryButton" Size="200,32" Style="TabButton" String="LOC_WARHIST_TAB" />
+					</Stack>
+
+					<!-- ============ Tab 1: Proxy War ============ -->
+					<Stack ID="ProxyTab" Anchor="C,T" StackGrowth="Down" Padding="10">
+						<Label Anchor="C,T" Style="FontNormal14" WrapWidth="580" String="LOC_PROXYWAR_INTRO" />
+
+						<Stack Anchor="C,T" StackGrowth="Right" Padding="20">
+							<Stack Anchor="L,T" StackGrowth="Down" Padding="4">
+								<Label Anchor="C,T" Style="FontFlair16" String="{LOC_PROXYWAR_COL_PROXY:upper}" />
+								<ScrollPanel ID="ProxyScroll" Size="290,220" Vertical="1" AutoScrollBar="1">
+									<Stack ID="ProxyStack" StackGrowth="Down" Padding="2" />
+									<ScrollBar Style="ScrollVerticalBar" Anchor="R,C" AnchorSide="O,I" />
+								</ScrollPanel>
+							</Stack>
+							<Stack Anchor="L,T" StackGrowth="Down" Padding="4">
+								<Label Anchor="C,T" Style="FontFlair16" String="{LOC_PROXYWAR_COL_TARGET:upper}" />
+								<ScrollPanel ID="TargetScroll" Size="290,220" Vertical="1" AutoScrollBar="1">
+									<Stack ID="TargetStack" StackGrowth="Down" Padding="2" />
+									<ScrollBar Style="ScrollVerticalBar" Anchor="R,C" AnchorSide="O,I" />
+								</ScrollPanel>
+							</Stack>
+						</Stack>
+
+						<Label ID="VerdictLabel" Anchor="C,T" Style="FontNormal16" WrapWidth="580" String="LOC_PROXYWAR_PICK_BOTH" />
+						<Label ID="DetailLabel"  Anchor="C,T" Style="FontNormal12" WrapWidth="580" String="" />
+
+						<GridButton ID="PayButton" Anchor="C,T" Size="220,41" Style="MainButton" String="LOC_PROXYWAR_PAY" />
+					</Stack>
+
+					<!-- ============ Tab 2: War History ============ -->
+					<Stack ID="HistoryTab" Anchor="C,T" StackGrowth="Down" Padding="8" Hidden="1">
+						<CheckBox ID="MineOnlyCheck" Anchor="L,T" Style="DefaultCheck" String="LOC_WARHIST_MINE_ONLY" />
+						<Label ID="HistorySummary" Anchor="L,T" Style="FontNormal14" WrapWidth="580" String="" />
+						<ScrollPanel ID="HistoryScroll" Size="600,360" Vertical="1" AutoScrollBar="1">
+							<Stack ID="HistoryStack" StackGrowth="Down" Padding="6" />
+							<ScrollBar Style="ScrollVerticalBar" Anchor="R,C" AnchorSide="O,I" />
+						</ScrollPanel>
+						<Label ID="HistoryEmpty" Anchor="C,T" Style="FontNormal14" WrapWidth="560" String="LOC_WARHIST_EMPTY" Hidden="1" />
+					</Stack>
+
+					<GridButton ID="CloseButton" Anchor="C,T" Size="150,41" Style="MainButton" String="LOC_PROXYWAR_CLOSE" />
+				</Stack>
+			</Grid>
+		</Grid>
+	</Box>
+
+	<!-- One selectable civ row -->
+	<Instance Name="CivRowInstance">
+		<GridButton ID="Button" Size="280,32" Style="ButtonControl">
+			<Label ID="Name" Anchor="L,C" Offset="10,0" Style="FontNormal14" />
+		</GridButton>
+	</Instance>
+
+	<!-- One war in the history list -->
+	<Instance Name="WarEntryInstance">
+		<Grid ID="Root" Size="580,auto" Style="SubContainer4" AutoSizePadding="0,8">
+			<Stack ID="Lines" Anchor="L,T" Offset="10,6" StackGrowth="Down" Padding="2">
+				<Label ID="WarName"  Style="FontFlair16"    WrapWidth="560" />
+				<Label ID="WarDates" Style="FontNormal12"   WrapWidth="560" />
+				<Label ID="WarStats" Style="FontNormal12"   WrapWidth="560" />
+				<Label ID="WarProxy" Style="FontNormal12"   WrapWidth="560" Hidden="1" />
+				<Label ID="WarResult" Style="FontNormal14"  WrapWidth="560" />
+			</Stack>
+		</Grid>
+	</Instance>
+
+	<!-- Button injected into the top-right partial-screen hook bar -->
+	<Instance Name="HookInstance">
+		<Stack ID="HookStack" StackGrowth="Right" StackPadding="-2">
+			<Image Anchor="L,C" Size="7,7" Texture="LaunchBar_TrackPip.dds" Color="255,255,255,200" Offset="0,-2" />
+			<Button ID="HookButton" Anchor="L,C" Size="40,40" Texture="LaunchBar_Hook_ButtonSmall.dds" Style="ButtonNormalText" ToolTip="LOC_PROXYWAR_HOOK_TOOLTIP">
+				<Image ID="HookIcon" Size="26,26" Anchor="C,C" Offset="0,-1" />
+			</Button>
+		</Stack>
+	</Instance>
+</Context>

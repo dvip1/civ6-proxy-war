@@ -1,0 +1,9 @@
+# Local Claude Code / editor settings
+.claude/settings.local.json
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+# Game logs copied in for debugging
+*.log

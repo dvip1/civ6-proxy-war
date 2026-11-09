@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="12A6877C-C7BB-4ABF-8512-6FFD16D990FD" version="3">
+	<Properties>
+		<Name>Proxy War &amp; War History</Name>
+		<Teaser>Pay one civilization to declare war on another, without joining the war yourself.</Teaser>
+		<Description>Adds a Proxy War button to the top-right hook bar. Pick an AI civilization and a target; the AI names a Gold price based on how much it already dislikes the target (diplomatic state, grievances), how it feels about you, the relative military strength, and how many wars it is already in. Pay, and it declares war. You are not a participant. A War History tab records every war between civilizations you have met: who declared it, how long it lasted, cities captured, units destroyed, and who won. Works with the base game, Rise and Fall, and Gathering Storm (grievances only count in Gathering Storm).</Description>
+		<Authors>Dvip Patel</Authors>
+		<AffectsSavedGames>0</AffectsSavedGames>
+		<CompatibleVersions>2.0</CompatibleVersions>
+	</Properties>
+	<InGameActions>
+		<ImportFiles id="ProxyWar_Imports">
+			<File>Scripts/ProxyWar_Logic.lua</File>
+			<File>Scripts/WarHistory_Logic.lua</File>
+			<File>UI/ProxyWarPanel.lua</File>
+		</ImportFiles>
+		<AddGameplayScripts id="ProxyWar_Gameplay">
+			<File>Scripts/ProxyWar_Gameplay.lua</File>
+		</AddGameplayScripts>
+		<AddUserInterfaces id="ProxyWar_UI">
+			<Properties>
+				<Context>InGame</Context>
+			</Properties>
+			<File>UI/ProxyWarPanel.xml</File>
+		</AddUserInterfaces>
+		<UpdateText id="ProxyWar_Text">
+			<File>Text/en_US/ProxyWar_Text.xml</File>
+		</UpdateText>
+	</InGameActions>
+	<Files>
+		<File>Scripts/ProxyWar_Logic.lua</File>
+		<File>Scripts/ProxyWar_Gameplay.lua</File>
+		<File>Scripts/WarHistory_Logic.lua</File>
+		<File>UI/ProxyWarPanel.xml</File>
+		<File>UI/ProxyWarPanel.lua</File>
+		<File>Text/en_US/ProxyWar_Text.xml</File>
+	</Files>
+</Mod>

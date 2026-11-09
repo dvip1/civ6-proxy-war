@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<!-- Root element is EnglishText, matching the shipped
+	     DLC/Expansion2/Text/en_US/Expansion1_DiplomacyDeals_Text.xml.
+	     Replace (not Row) because these tags already exist.
+
+	     This rename doubles as the load canary: if the trade screen still says
+	     "Join Ongoing War", the mod did not apply and there is no point reading
+	     anything into the grievance numbers. -->
+	<EnglishText>
+		<Replace Tag="LOC_DIPLOACTION_THIRD_PARTY_WAR_NAME">
+			<Text>Proxy War (Deniable)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLOACTION_THIRD_PARTY_WAR_DESCRIPTION">
+			<Text>Have them enter a war against a target civilization. You incur no grievances or warmongering penalties for the war they fight, whatever they do in it.</Text>
+		</Replace>
+	</EnglishText>
+</GameData>

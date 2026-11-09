@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<Row Tag="LOC_PROXYWAR_TITLE" Language="en_US"><Text>War Room</Text></Row>
+		<Row Tag="LOC_PROXYWAR_HOOK_TOOLTIP" Language="en_US"><Text>War Room[NEWLINE]Pay another civilization to declare war on a third, and browse the history of every war you know of.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_INTRO" Language="en_US"><Text>Choose who fights and who they fight. The worse their relationship (and the more grievances between them), the cheaper it is. You are not a party to the war.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_COL_PROXY" Language="en_US"><Text>Who attacks (AI)</Text></Row>
+		<Row Tag="LOC_PROXYWAR_COL_TARGET" Language="en_US"><Text>Target</Text></Row>
+		<Row Tag="LOC_PROXYWAR_CIV_NAME" Language="en_US"><Text>{1_Leader} ({2_Civ})</Text></Row>
+		<Row Tag="LOC_PROXYWAR_PICK_BOTH" Language="en_US"><Text>Pick an attacker and a target.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_ASKS" Language="en_US"><Text>{1_Proxy} will declare war on {3_Target} for [ICON_Gold] {2_Price} Gold.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_DETAIL" Language="en_US"><Text>Their view of the target: {1_State}. Their view of you: {2_State}. Strength ratio: {3_Ratio}. Grievances vs target: {4_Num}. Other wars: {5_Num}.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REFUSES" Language="en_US"><Text>[COLOR_Red]{1_Proxy} refuses.[ENDCOLOR]</Text></Row>
+		<Row Tag="LOC_PROXYWAR_PAY" Language="en_US"><Text>Pay</Text></Row>
+		<Row Tag="LOC_PROXYWAR_PAY_AMOUNT" Language="en_US"><Text>Pay [ICON_Gold] {1_Price}</Text></Row>
+		<Row Tag="LOC_PROXYWAR_CLOSE" Language="en_US"><Text>Close</Text></Row>
+		<Row Tag="LOC_PROXYWAR_SENT" Language="en_US"><Text>Offer sent...</Text></Row>
+		<Row Tag="LOC_PROXYWAR_SUCCESS" Language="en_US"><Text>{1_Proxy} has declared war on {2_Target}. You paid [ICON_Gold] {3_Price} Gold.</Text></Row>
+
+		<Row Tag="LOC_PROXYWAR_NOTIFY_TITLE" Language="en_US"><Text>A Bought War</Text></Row>
+		<Row Tag="LOC_PROXYWAR_NOTIFY_REVEALED" Language="en_US"><Text>Your spies report that {1_Proxy} was paid by {2_Sponsor} to declare war on you.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_NOTIFY_HIDDEN" Language="en_US"><Text>Rumors say someone paid {1_Proxy} to declare war on you, but nobody knows who.</Text></Row>
+
+		<Row Tag="LOC_PROXYWAR_REASON_OK" Language="en_US"><Text>Willing.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_SAME_PLAYER" Language="en_US"><Text>Attacker and target must be two different civilizations, neither of them you.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_NOT_ALIVE" Language="en_US"><Text>Both must be living major civilizations.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_PROXY_IS_HUMAN" Language="en_US"><Text>Human players can't be bought this way.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_NOT_MET_PROXY" Language="en_US"><Text>You haven't met the attacker.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_NOT_MET_TARGET" Language="en_US"><Text>You haven't met the target.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_PROXY_NOT_MET_TARGET" Language="en_US"><Text>They haven't met the target.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_SPONSOR_AT_WAR_WITH_PROXY" Language="en_US"><Text>You are at war with them.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_ALREADY_AT_WAR" Language="en_US"><Text>They are already at war with the target.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_CANNOT_DECLARE" Language="en_US"><Text>A treaty or alliance currently stops them declaring war on the target.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_ALLIED_TO_TARGET" Language="en_US"><Text>They are allied with the target.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_HATES_SPONSOR" Language="en_US"><Text>They have denounced you and won't take your money.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_TOO_WEAK" Language="en_US"><Text>The target's military is too strong for them to risk it.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_TOO_BUSY" Language="en_US"><Text>They are already fighting too many wars.</Text></Row>
+		<Row Tag="LOC_PROXYWAR_REASON_NOT_ENOUGH_GOLD" Language="en_US"><Text>You don't have enough Gold.</Text></Row>
+
+		<Row Tag="LOC_PROXYWAR_TAB_PROXY" Language="en_US"><Text>Proxy War</Text></Row>
+		<Row Tag="LOC_WARHIST_TAB" Language="en_US"><Text>War History</Text></Row>
+		<Row Tag="LOC_WARHIST_MINE_ONLY" Language="en_US"><Text>Only wars involving me</Text></Row>
+		<Row Tag="LOC_WARHIST_EMPTY" Language="en_US"><Text>No wars recorded yet. Wars between civilizations you have met will appear here.</Text></Row>
+		<Row Tag="LOC_WARHIST_SUMMARY" Language="en_US"><Text>{1_Num} wars on record, {2_Num} ongoing.</Text></Row>
+		<Row Tag="LOC_WARHIST_NAME" Language="en_US"><Text>{1_Ordinal} {2_CivA}–{3_CivB} War</Text></Row>
+		<Row Tag="LOC_WARHIST_ORDINAL_1" Language="en_US"><Text>First</Text></Row>
+		<Row Tag="LOC_WARHIST_ORDINAL_2" Language="en_US"><Text>Second</Text></Row>
+		<Row Tag="LOC_WARHIST_ORDINAL_3" Language="en_US"><Text>Third</Text></Row>
+		<Row Tag="LOC_WARHIST_ORDINAL_4" Language="en_US"><Text>Fourth</Text></Row>
+		<Row Tag="LOC_WARHIST_ORDINAL_5" Language="en_US"><Text>Fifth</Text></Row>
+		<Row Tag="LOC_WARHIST_ORDINAL_6" Language="en_US"><Text>Sixth</Text></Row>
+		<Row Tag="LOC_WARHIST_ORDINAL_7" Language="en_US"><Text>Seventh</Text></Row>
+		<Row Tag="LOC_WARHIST_ORDINAL_8" Language="en_US"><Text>Eighth</Text></Row>
+		<Row Tag="LOC_WARHIST_ORDINAL_9" Language="en_US"><Text>Ninth</Text></Row>
+		<Row Tag="LOC_WARHIST_ORDINAL_10" Language="en_US"><Text>Tenth</Text></Row>
+		<Row Tag="LOC_WARHIST_ORDINAL_N" Language="en_US"><Text>{1_Num}th</Text></Row>
+		<Row Tag="LOC_WARHIST_DATES_ONGOING" Language="en_US"><Text>Began turn {1_Turn} ({2_Num} turns so far).</Text></Row>
+		<Row Tag="LOC_WARHIST_DATES_ONGOING_UNKNOWN" Language="en_US"><Text>Began before records were kept.</Text></Row>
+		<Row Tag="LOC_WARHIST_DATES_ENDED" Language="en_US"><Text>Turn {1_Start}–{2_End} ({3_Num} turns).</Text></Row>
+		<Row Tag="LOC_WARHIST_DATES_ENDED_UNKNOWN" Language="en_US"><Text>Began before records were kept; ended turn {1_End}.</Text></Row>
+		<Row Tag="LOC_WARHIST_DECLARED_BY" Language="en_US"><Text>Declared by {1_Civ}.</Text></Row>
+		<Row Tag="LOC_WARHIST_STATS" Language="en_US"><Text>Cities captured: {1_CivA} {2_Num}, {3_CivB} {4_Num}.  Units destroyed: {1_CivA} {5_Num}, {3_CivB} {6_Num}.</Text></Row>
+		<Row Tag="LOC_WARHIST_PROXY_YOU" Language="en_US"><Text>[COLOR_Gold]You paid for this war.[ENDCOLOR]</Text></Row>
+		<Row Tag="LOC_WARHIST_PROXY_REVEALED" Language="en_US"><Text>[COLOR_Red]A proxy war, paid for by {1_Civ}.[ENDCOLOR]</Text></Row>
+		<Row Tag="LOC_WARHIST_OUTCOME_ONGOING" Language="en_US"><Text>[COLOR_Yellow]Ongoing[ENDCOLOR]</Text></Row>
+		<Row Tag="LOC_WARHIST_OUTCOME_STALEMATE" Language="en_US"><Text>Ended in a stalemate.</Text></Row>
+		<Row Tag="LOC_WARHIST_OUTCOME_VICTORY" Language="en_US"><Text>Victory for {1_Civ}.</Text></Row>
+		<Row Tag="LOC_WARHIST_OUTCOME_DECISIVE" Language="en_US"><Text>Decisive victory for {1_Civ}.</Text></Row>
+		<Row Tag="LOC_WARHIST_OUTCOME_CONQUEST" Language="en_US"><Text>{1_Loser} was destroyed by {2_Winner}.</Text></Row>
+	</LocalizedText>
+</GameData>
