@@ -74,10 +74,18 @@ tests/validate.sh          # XML, modinfo files, Lua syntax, text keys, control 
 tests/check_ingame_log.sh  # after playing: summarises Lua.log / Modding.log
 ```
 
-## experiments/
-`deniable-join-war/` is the earlier, data-only attempt. It zeroed the warmonger values on the vanilla
-`DIPLOACTION_THIRD_PARTY_WAR`. That agreement is really "Join Ongoing War": the engine only offers
-targets you are already at war with, so it could never keep you out of the war.
+## Project layout
+```
+mods/ProxyWar/                      the mod itself (copy or symlink this into Civ VI's Mods folder)
+  ProxyWar.modinfo                  mod definition: files, load order
+  Scripts/ProxyWar_Logic.lua        proxy war pricing + AI deal scoring (pure, unit-tested)
+  Scripts/WarHistory_Logic.lua      war history records, outcomes, save format (pure, unit-tested)
+  Scripts/ProxyWar_Gameplay.lua     gameplay side: executes deals, runs AI sponsors, records war history
+  UI/ProxyWarPanel.xml / .lua       the War Room panel: Proxy War tab + War History tab
+  Text/en_US/ProxyWar_Text.xml      all on-screen text
+tests/                              offline tests + in-game log checker
+docs/                               install, testing, AI notes
+```
 
 ## License
 Copyright (C) 2026 Dvip Patel
